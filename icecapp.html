@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+            <title>Ice Capp </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="javascript1.js" type="text/javascript"></script> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styless.css">
+    </head>
+    <body>
+        
+        <h1 >Ice Capps</h1>
+        <div class="container">
+        <form>
+            <legend>
+            
+            <div class="form-group">
+                <label for="customerName" class="a2">Name:</label>
+                <input type="text" placeholder="Enter Your Name" class="form-control" name="customerName" id="customerName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="type" class="a2">Choose Your Coffee</label>
+                <select name="type" id="type" class="form-control" required>
+                    <option value="Ice Capp Mocha">Ice Capp Mocha</option>
+                    <option value="Cream Chills Ice Capp">Cream Chills Ice Capp</option>
+                </select>
+
+            </div>
+
+            <div class="form-group"> 
+                <label for="coffeesize" class="a2">size: </label>
+                <select class="form-control" name="coffeeSize" id="coffeeSize" required>
+                <option selected value="Choose the size of coffee">Choose the size of coffee</option>    
+                <option value="Tall">Tall</option>
+                <option value="Grande">Grande</option>
+                <option value="Venti">Venti</option>
+                <option value="Short">Short</option>    
+            </select>   
+            </div>
+
+        <legend>
+            <div class="form-group">
+                <label for="Drizzle" class="a2">Drizzle</label><br>    
+                Yes <input type="radio" id="Drizzle"  name="Drizzle" value="Drizzle">
+                No <input type="radio" id="Drizzle"  name="Drizzle" value="no"><br>
+            </div>
+        </legend>
+        
+        <legend>
+        <div class="form-group">
+            <label for="Whippedcreme" class="a2">Whipped Cream</label><br>
+            <select name="Whippedcreme" id="Whippedcreme" class="form-control">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </label> 
+            </select>   
+        </div>
+        </legend>
+        <legend>
+        <div>
+            <label for="coldFoam" class="a2">Cold-foam?</label><br>
+                    	Yes <input type="radio" name="coldFoam" id="coldFoam" value="Cold Foam Yes">
+                        No <input type="radio" name="coldFoam" id="coldFoam" value="no">
+        </div>
+        </legend>    
+        
+        <div class= "form-group">
+            <label for="Sweetener" class="a2">Sweetner</label><br>
+            <select name="Sweetener" id="Sweetener" class="form-control">
+                <option value="Sweetener">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+
+        <div class="form-group" class="a2">
+            <label for="dairy" class="a2">Choose one from the below dairy options</label> 
+            <select class="form-control" name="dairy" id="dairy">
+            <option selected value="Choose a Dairy option">Choose a Dairy option</option>
+            <option value="milk">2% milk</option>
+            <option value="almondMilk">Almond Milk</option>
+            <option value="Cream">Cream</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+            <button class="fill" name="button" type="button" onclick="orderCoffee()">Order Now</button>
+        </div>
+        </legend>    
+        </form>
+        </div>
+        
+
+    </body>
+    </html>        
+    
